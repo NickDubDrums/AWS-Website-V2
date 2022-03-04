@@ -6,6 +6,10 @@
   z-index: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *, *:before, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -18,11 +22,12 @@
 }
 
 body {
-  background: #CFCFCF;
+  background: #cfcfcf;
   background-size: cover;
   margin: 0px;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  z-index: 0;
 }
 
 .navbar .nav {
@@ -45,6 +50,7 @@ body {
   list-style: none;
   -webkit-backdrop-filter: blur(9px);
           backdrop-filter: blur(9px);
+  z-index: 100;
 }
 
 .navbar .nav a {
@@ -59,7 +65,305 @@ body {
   color: white;
 }
 
-.hero {
-  padding-top: 103px;
+.hero .container img {
+  width: 100%;
+  z-index: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero .logo-scritta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 120px;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  top: 110px;
+}
+
+.hero .logo-scritta img {
+  z-index: auto;
+  height: 10vw;
+}
+
+.hero .icons-top {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 220px;
+  z-index: 0;
+  padding-left: 42%;
+  padding-right: 42%;
+}
+
+.hero .icons-top svg {
+  width: 2vw;
+  height: 2vw;
+  z-index: auto;
+  margin: 11px;
+}
+
+.blur-div {
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  height: 150px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  top: -50px;
+}
+
+.bio {
+  top: -130px;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.bio h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  font-size: 60px;
+  font-weight: normal;
+}
+
+.bio p {
+  z-index: 1;
+  font-size: 30px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 90px;
+  text-align: center;
+}
+
+.divisore1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5%;
+  position: relative;
+  top: -130px;
+  margin-bottom: -130px;
+}
+
+.divisore1 img {
+  z-index: auto;
+  width: 100%;
+  padding: 5%;
+  z-index: 0;
+}
+
+.videos h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  font-size: 60px;
+  font-weight: normal;
+  padding-bottom: 100px;
+}
+
+.videos .frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.videos p {
+  z-index: 1;
+  font-size: 30px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 90px;
+  text-align: center;
+}
+
+.divisore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5%;
+}
+
+.divisore img {
+  z-index: auto;
+  width: 100%;
+  padding: 5%;
+  z-index: 0;
+}
+
+.dates {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.dates h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  font-size: 60px;
+  font-weight: normal;
+  padding-bottom: 100px;
+}
+
+.store {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.store h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  font-size: 60px;
+  font-weight: normal;
+  padding-bottom: 100px;
+}
+
+.store .ecwid {
+  background-color: #181717;
+  padding: 50px;
+}
+
+.contact h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  font-size: 60px;
+  font-weight: normal;
+  padding-bottom: 0px;
+}
+
+.contact .buttons-cont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+.contact .buttons-cont .band, .contact .buttons-cont .booking, .contact .buttons-cont .epk {
+  width: 25vw;
+  height: 5vw;
+  border: none;
+  background-color: #515151;
+  border-radius: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact .buttons-cont .band p, .contact .buttons-cont .booking p, .contact .buttons-cont .epk p {
+  font-size: 2vw;
+  color: #EFEFEF;
+}
+
+.contact .buttons-cont .band:hover, .contact .buttons-cont .booking:hover, .contact .buttons-cont .epk:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.icons-bot {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1%;
+  z-index: 0;
+}
+
+.icons-bot svg {
+  width: 35px;
+  z-index: auto;
+  margin: 11px;
+}
+
+.footer {
+  background-color: #dbdbdb;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1600px) {
+  .hero .logo-scritta {
+    height: 100px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
