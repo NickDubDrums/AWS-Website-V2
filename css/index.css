@@ -32,7 +32,7 @@ body {
 
 .navbar .nav {
   width: 100%;
-  height: 103px;
+  height: 6vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,8 +42,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 352px;
-  padding-right: 352px;
+  padding-left: 20%;
+  padding-right: 20%;
   background-color: rgba(0, 0, 0, 0.15);
   position: fixed;
   top: 0;
@@ -56,9 +56,9 @@ body {
 .navbar .nav a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 35px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  font-size: 2.5vw;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .navbar .nav a:hover {
@@ -66,6 +66,13 @@ body {
 }
 
 .hero .container img {
+  width: 100%;
+  z-index: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero .container video {
   width: 100%;
   z-index: auto;
   -o-object-fit: cover;
@@ -82,11 +89,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 120px;
+  height: 6vw;
   position: absolute;
   z-index: 0;
   width: 100%;
-  top: 110px;
+  top: 6vw;
 }
 
 .hero .logo-scritta img {
@@ -97,43 +104,50 @@ body {
 .hero .icons-top {
   position: absolute;
   width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw;
+      grid-template-columns: 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  top: 11.5vw;
+  z-index: 0;
+}
+
+.hero .icons-top a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  top: 220px;
-  z-index: 0;
-  padding-left: 42%;
-  padding-right: 42%;
 }
 
 .hero .icons-top svg {
-  width: 2vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 2vw;
   z-index: auto;
-  margin: 11px;
 }
 
 .blur-div {
+  color: #181717;
   -webkit-backdrop-filter: blur(25px);
           backdrop-filter: blur(25px);
-  height: 150px;
+  height: 12vw;
   width: 100%;
   position: relative;
   z-index: 0;
-  top: -50px;
+  top: -3vw;
 }
 
 .bio {
-  top: -130px;
+  top: -11vw;
   position: relative;
   z-index: 10;
   width: 100%;
+  margin-bottom: 2vw;
 }
 
 .bio h1 {
@@ -144,16 +158,17 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
-  font-size: 60px;
+  font-size: 3vw;
   font-weight: normal;
 }
 
 .bio p {
   z-index: 1;
-  font-size: 30px;
+  font-size: 1.7vw;
   padding-left: 8%;
   padding-right: 8%;
-  padding-top: 90px;
+  padding-top: 5vw;
+  margin-bottom: 2vw;
   text-align: center;
 }
 
@@ -169,7 +184,7 @@ body {
           align-items: center;
   height: 5%;
   position: relative;
-  top: -130px;
+  top: -13vw;
   margin-bottom: -130px;
 }
 
@@ -188,9 +203,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
-  font-size: 60px;
+  font-size: 3vw;
   font-weight: normal;
-  padding-bottom: 100px;
+  padding-bottom: 5.2vw;
 }
 
 .videos .frame {
@@ -205,12 +220,17 @@ body {
           justify-content: center;
 }
 
+.videos .frame iframe {
+  height: 35vw;
+  width: 66.7vw;
+}
+
 .videos p {
   z-index: 1;
-  font-size: 30px;
+  font-size: 1.7vw;
   padding-left: 8%;
   padding-right: 8%;
-  padding-top: 90px;
+  padding-top: 4.7vw;
   text-align: center;
 }
 
@@ -247,9 +267,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
-  font-size: 60px;
+  font-size: 3vw;
   font-weight: normal;
-  padding-bottom: 100px;
+  padding-bottom: 5.2vw;
 }
 
 .store {
@@ -265,9 +285,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
-  font-size: 60px;
+  font-size: 3vw;
   font-weight: normal;
-  padding-bottom: 100px;
+  padding-bottom: 5.2vw;
 }
 
 .store .ecwid {
@@ -283,7 +303,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
-  font-size: 60px;
+  font-size: 3vw;
   font-weight: normal;
   padding-bottom: 0px;
 }
@@ -328,12 +348,16 @@ body {
 .icons-bot {
   position: relative;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-grid-columns: 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw;
+      grid-template-columns: 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -341,10 +365,18 @@ body {
   z-index: 0;
 }
 
+.icons-bot a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .icons-bot svg {
-  width: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2vw;
   z-index: auto;
-  margin: 11px;
 }
 
 .footer {
@@ -359,11 +391,31 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 0.8vw;
+}
+
+/*
+@media (orientation: landscape){
+
+}
+
+@media (orientation: portrait) {
+    
 }
 
 @media (max-width: 1600px) {
-  .hero .logo-scritta {
-    height: 100px;
-  }
+    .hero {
+
+        .logo-scritta {
+            height: 100px;
+        }
+       
+    }
 }
+
+@media (max-width: 1470px) {
+    //.hero {
+        
+  //  }
+}*/
 /*# sourceMappingURL=index.css.map */

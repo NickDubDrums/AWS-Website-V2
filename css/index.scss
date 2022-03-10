@@ -33,12 +33,12 @@ body {
 
     .nav{
         width: 100%;
-        height: 103px;
+        height: 6vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-left: 352px;
-        padding-right: 352px;
+        padding-left: 20%;
+        padding-right: 20%;
         background-color: rgba(0, 0, 0, 0.15);
         position: fixed;
         top: 0;
@@ -47,12 +47,13 @@ body {
         z-index: 100;
         
         
+        
 
         a{
             text-decoration: none;
             color: var(--text-color);
-            font-size: 35px;
-            transition: 0.3s;
+            font-size: 2.5vw;
+            transition: 0.2s;
         }
         a:hover {
             color: white;
@@ -68,17 +69,23 @@ body {
             z-index: auto;
             object-fit: cover;
         }
+
+        video {
+            width: 100%;
+            z-index: auto;
+            object-fit: cover;
+        }
        
     }   
     .logo-scritta {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 120px;
+        height: 6vw;
         position: absolute;
         z-index: 0;
         width: 100%;
-        top: 110px;
+        top: 6vw;
    
         
         img {
@@ -90,54 +97,64 @@ body {
     .icons-top {
         position: absolute;
         width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        top:  220px;
+        display: grid;
+        justify-content: center;
+        //align-items: center;
+        grid-template-columns: 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw;
+        column-gap: 5px;
+        top:  11.5vw;
         z-index: 0;
-        padding-left: 42%;
-        padding-right: 42%;
+
         
+        a {
+            display: flex;
+        }
         
         svg {
-            width: 2vw;
+            justify-content: center;
+            //width: 2vw;
             height: 2vw;
             z-index: auto;
-            margin: 11px;
         }
         
     }
 }
 
 .blur-div {
+    color: #181717;
     backdrop-filter: blur(25px);
-    height: 150px;
+    height: 12vw;
+    //height: 150px;
     width: 100%;
     position: relative;
     z-index: 0;
-    top: -50px;
+    top: -3vw;
+    //top: -50px;
 }
 
 .bio {
-    top: -130px;
+    top: -11vw;
     position: relative;
     z-index: 10;
     width: 100%;
+    margin-bottom: 2vw;
     
     
     h1 {
         display: flex;
         justify-content: center;
         z-index: 1;
-        font-size: 60px;
+        font-size: 3vw;
         font-weight: normal;
     }
     p {
         z-index: 1;
-        font-size: 30px;
+        font-size: 1.7vw;
+        //font-size: 30px;
         padding-left: 8%;
         padding-right: 8%;
-        padding-top: 90px;
+        padding-top: 5vw;
+        margin-bottom: 2vw;
         text-align: center;
         
     }
@@ -150,7 +167,7 @@ body {
     align-items: center;
     height: 5%;
     position: relative;
-    top: -130px;
+    top: -13vw;
     margin-bottom: -130px;
     
     img {
@@ -168,9 +185,9 @@ body {
         display: flex;
         justify-content: center;
         z-index: 1;
-        font-size: 60px;
+        font-size: 3vw;
         font-weight: normal;
-        padding-bottom: 100px;
+        padding-bottom: 5.2vw;
     }
     
     .frame{
@@ -178,14 +195,19 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        iframe {
+            height: 35vw;
+            width: 66.7vw;
+        }
     }
 
     p {
         z-index: 1;
-        font-size: 30px;
+        font-size: 1.7vw;
         padding-left: 8%;
         padding-right: 8%;
-        padding-top: 90px;
+        padding-top:  4.7vw;
         text-align: center;    
     }
 
@@ -213,9 +235,9 @@ body {
         display: flex;
         justify-content: center;
         z-index: 1;
-        font-size: 60px;
+        font-size: 3vw;
         font-weight: normal;
-        padding-bottom: 100px;
+        padding-bottom: 5.2vw;
     }
 
     padding-left: 8%;
@@ -227,9 +249,9 @@ body {
         display: flex;
         justify-content: center;
         z-index: 1;
-        font-size: 60px;
+        font-size: 3vw;
         font-weight: normal;
-        padding-bottom: 100px;
+        padding-bottom: 5.2vw;
     }
     padding-left: 8%;
     padding-right: 8%;
@@ -244,7 +266,7 @@ body {
         display: flex;
         justify-content: center;
         z-index: 1;
-        font-size: 60px;
+        font-size: 3vw;
         font-weight: normal;
         padding-bottom: 0px;
     }
@@ -288,18 +310,27 @@ body {
 .icons-bot {
     position: relative;
     width: 100%;
-    display: flex;
+    display: grid;
+    justify-content: center;
+    //align-items: center;
+    grid-template-columns: 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw;
+    column-gap: 5px;
     justify-content: center;
     align-items: center;
     padding-bottom: 1%;
     z-index: 0;
     
+    a {
+        display: flex;
+    }
     
     svg {
-        width: 35px;
+        justify-content: center;
+        //width: 2vw;
+        height: 2vw;
         z-index: auto;
-        margin: 11px;
     }
+    
 }
 .footer {
     background-color: rgb(219, 219, 219);
@@ -307,8 +338,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 0.8vw;
 }
-
+/*
 @media (orientation: landscape){
 
 }
@@ -331,4 +363,4 @@ body {
     //.hero {
         
   //  }
-}
+}*/
