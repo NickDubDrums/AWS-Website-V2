@@ -270,8 +270,9 @@ label {
     .bit {
         width: auto;
         height: auto;
-        font-size: 500px;
+        font-size: 0px;
     }
+    
 
     padding-left: 8%;
     padding-right: 8%;
@@ -338,10 +339,6 @@ label {
             cursor: pointer;
         }
     }
-
-
-
-
 
 }
 
@@ -576,6 +573,9 @@ label {
     }
 
     @media (orientation: portrait) {
+
+        
+
         .navbar {
             .nav {
                 width: auto;
@@ -600,6 +600,45 @@ label {
                 }
             }
         }
+
+        .bio, .videos, .dates, .store, .contact {
+            h1 {
+                font-size: 7vw;
+            }
+            p {
+                font-size: 2.5vw;
+            }
+        }
+
+        .hero {
+
+            .logo-scritta {
+                top: 2vw;
+           
+                
+                img {
+                    z-index: auto;
+                    height: 15vw;
+                }
+                      
+            }
+            
+        .icons-top {
+            column-gap: 15px; 
+            top: 9vw; 
+            svg {
+                height: 3vw;
+            }
+        }
+        }
+        .icons-bot {
+            column-gap: 15px;  
+            svg {
+                height: 3vw;
+            }
+        }
+
+
 
         @media (max-width: 730px) {
            .contact {
@@ -639,7 +678,5 @@ label {
             }
            }
         }
-        
-    }
-
+}
   

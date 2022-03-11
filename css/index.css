@@ -298,7 +298,7 @@ label {
 .dates .bit {
   width: auto;
   height: auto;
-  font-size: 500px;
+  font-size: 0px;
 }
 
 .store {
@@ -630,6 +630,34 @@ label {
   .navbar .nav li {
     height: 15vw;
     width: 100%;
+  }
+  .bio h1, .videos h1, .dates h1, .store h1, .contact h1 {
+    font-size: 7vw;
+  }
+  .bio p, .videos p, .dates p, .store p, .contact p {
+    font-size: 2.5vw;
+  }
+  .hero .logo-scritta {
+    top: 2vw;
+  }
+  .hero .logo-scritta img {
+    z-index: auto;
+    height: 15vw;
+  }
+  .hero .icons-top {
+    -webkit-column-gap: 15px;
+            column-gap: 15px;
+    top: 9vw;
+  }
+  .hero .icons-top svg {
+    height: 3vw;
+  }
+  .icons-bot {
+    -webkit-column-gap: 15px;
+            column-gap: 15px;
+  }
+  .icons-bot svg {
+    height: 3vw;
   }
 }
 
