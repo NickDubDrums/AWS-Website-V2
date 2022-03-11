@@ -14,7 +14,7 @@ html {
 
 :root {
     --primary-color: #181717;
-    --secondary-color: #515151;
+    --secondary-color: #494949;
     --text-color:#515151;
 }
 
@@ -28,6 +28,13 @@ body {
     
 }
 
+#check {
+    display: none;
+}
+label {
+    display: none;
+}
+
 .navbar {
     
 
@@ -39,11 +46,10 @@ body {
         justify-content: space-between;
         padding-left: 20%;
         padding-right: 20%;
-        background-color: rgba(0, 0, 0, 0.15);
+        background-color: rgba(0, 0, 0, 0.541);
         position: fixed;
         top: 0;
         list-style: none;
-        backdrop-filter: blur(9px);
         z-index: 100;
         
         
@@ -51,7 +57,7 @@ body {
 
         a{
             text-decoration: none;
-            color: var(--text-color);
+            color: #d8d8d8;
             font-size: 2.5vw;
             transition: 0.2s;
         }
@@ -60,6 +66,20 @@ body {
         }
     }
 }
+ @supports (backdrop-filter: blur(9px)){
+     
+    .navbar{
+        .nav {
+            background-color: rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(9px);
+
+            a {
+            color: var(--secondary-color);
+            
+            }
+        }
+    }
+ }
 
 .hero {
     .container{
@@ -121,8 +141,7 @@ body {
 }
 
 .blur-div {
-    color: #181717;
-    backdrop-filter: blur(25px);
+    color: #1817175b;
     height: 12vw;
     //height: 150px;
     width: 100%;
@@ -132,6 +151,12 @@ body {
     //top: -50px;
 }
 
+ @supports (backdrop-filter: blur(25px)) {
+    .blur-div {
+        color: #181717;
+        backdrop-filter: blur(25px);
+    }
+} 
 .bio {
     top: -11vw;
     position: relative;
@@ -168,7 +193,7 @@ body {
     height: 5%;
     position: relative;
     top: -13vw;
-    margin-bottom: -130px;
+    margin-bottom: -13vw;
     
     img {
         
@@ -231,6 +256,8 @@ body {
 }
 
 .dates {
+
+
     h1 {
         display: flex;
         justify-content: center;
@@ -238,6 +265,12 @@ body {
         font-size: 3vw;
         font-weight: normal;
         padding-bottom: 5.2vw;
+    }
+
+    .bit {
+        width: auto;
+        height: auto;
+        font-size: 500px;
     }
 
     padding-left: 8%;
@@ -258,6 +291,11 @@ body {
     .ecwid {
         background-color: #181717;
         padding: 50px;
+        font-size: 0.7vw;
+    }
+
+    .insotre {
+        max-height: 600px;
     }
 }
 
@@ -340,27 +378,268 @@ body {
     align-items: center;
     font-size: 0.8vw;
 }
-/*
-@media (orientation: landscape){
 
-}
 
-@media (orientation: portrait) {
-    
-}
-
-@media (max-width: 1600px) {
-    .hero {
-
-        .logo-scritta {
-            height: 100px;
-        }
-       
-    }
-}
-
-@media (max-width: 1470px) {
-    //.hero {
+    @media (max-width: 970px) {
         
-  //  }
-}*/
+       label {
+            display: flex;
+       }
+
+       label #btn, label #cancel {
+            position: absolute;
+            position: fixed;
+            cursor: pointer;
+            top: 1vh;
+            right: 1vw;
+            z-index: 50;
+            border: 0;
+            transition: all 0.5s ease-in-out;
+       }
+
+       label #btn {
+           color: #181717;
+           padding: 0.5vw;
+           font-size: 5vw;
+       }
+
+       label #cancel {
+           transform: translateX(1000%);
+           color: #cfcfcf;
+           font-size: 6vw;
+           padding: .5vw;
+           z-index: 9999;
+       }
+
+      
+
+
+        /* .mobile-nav-toggle{
+            span {
+                display: none;
+            }
+            position: absolute;
+            background: url(/icons/metro-menu.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 4vw;
+            height: 3vh;
+            top: 1vh;
+            right: 3vw;
+            z-index: 0;
+            border: 0;
+            font-size: 15px;
+           
+
+            
+
+        }
+
+        .mobile-nav-off{
+            span {
+                display: none;
+            }
+            position: absolute;
+            background: url(/icons/material-close.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 4vw;
+            height: 3vh;
+            top: 1vh;
+            right: 3vw;
+            z-index: 9999;
+            border: 0;
+            font-size: 15px;
+          
+
+            
+
+        } */
+
+        .navbar {         
+            .nav {
+                width: auto;
+                position: fixed;
+                inset: 0 0 0 63%;
+                align-items: center;
+                justify-content: center;
+                padding: 4vw  0 0 0 ; 
+                flex-direction: column;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.863);
+
+                transition: all 0.5s ease-in-out;
+
+                transform: translateX(100%);
+
+
+                li {
+                    display: flex;
+                    height: 18vh;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 1vh 0 1vh 0;
+                    transition: 0s;
+                }
+
+                li:hover {
+                    
+                    background-color: rgba(0, 0, 0, 0.856);
+                }
+                a {
+                    font-size: 2vw;
+                    color: #ebebeb;
+                    width: 100%;
+
+                    &:hover{
+                        font-weight: bold;
+                    }
+                }
+
+                
+                
+            }
+
+
+
+        }
+
+        #check:checked ~ .navbar .nav {
+            transform: translateX(0);
+        }
+
+        #check:checked ~ label #btn {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #check:checked ~ label #cancel {
+            transform: translateX(0%);
+        }
+
+ .hero{
+        .logo-scritta {
+            top: 3vw;
+       
+            
+            img {
+                z-index: auto;
+                height: 10vw;
+            }
+                  
+        }
+        .icons-top {
+            position: absolute;
+            width: 100%;
+            display: grid;
+            justify-content: center;
+            //align-items: center;
+            grid-template-columns: 3.5vw 3.5vw 3.5vw 3.5vw 3.5vw;
+            column-gap: 5px;
+            top:  9.5vw;
+            z-index: 0;
+    
+            
+            a {
+                display: flex;
+            }
+            
+            svg {
+                justify-content: center;
+                //width: 2vw;
+                height: 2vw;
+                z-index: auto;
+            }
+            
+        }
+    }
+
+        @supports (backdrop-filter: blur(9px)){
+            .navbar {
+                .nav {
+
+                    background-color: rgba(0, 0, 0, 0.7);
+                    backdrop-filter: blur(9px);
+
+                    li:hover {
+                    
+                        backdrop-filter: blur(1px);
+                        background-color: rgba(0, 0, 0, 0);
+                    }
+    
+    
+                }
+            }
+        }
+    }
+
+    @media (orientation: portrait) {
+        .navbar {
+            .nav {
+                width: auto;
+                position: fixed;
+                inset: 0 0 0 45%;
+                align-items: center;
+                justify-content: left;
+                padding: 5vh 0 0 0 ; 
+
+                a {
+                   
+                    font-size: 3vw;
+                    color: #cfcfcf;
+                    width: 100%;
+                }
+
+                li {
+                    
+                    height: 15vw;
+                    width: 100%;
+                    
+                }
+            }
+        }
+
+        @media (max-width: 730px) {
+           .contact {
+            .buttons-cont {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-top: 5%;
+                padding-bottom: 2%;
+
+                a {
+                    margin: 10px 0 10px 0;
+                }
+        
+                .band, .booking, .epk {
+                    width: 45vw;
+                    height: 8vw;
+                    border: none;
+                    background-color: #515151;
+                    border-radius: 50px;
+                    transition: 0.3s;
+        
+                    p {
+                        font-size: 3vw;
+                        color: #EFEFEF;
+                    }
+        
+                }
+                .band:hover, .booking:hover, .epk:hover {
+                    background-color: black;
+                    cursor: pointer;
+                }
+            }
+           }
+        }
+        
+    }
+
+  

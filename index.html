@@ -9,19 +9,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/f2ee4efe10.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+
     <div class="navbar">
 
+
+      <!--<button id="btn" class="mobile-nav-toggle"
+      aria-controls="primary-navigation" 
+      aria-expanded="false">
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <button id="cancel" class="mobile-nav-off"
+    aria-controls="primary-navigation" 
+    aria-expanded="false">
+    <span class="sr-only">Menu Exit</span>
+</button>
+
+    <button id="mobile-exit" class="mobile-nav-off"
+    aria-controls="primary-navigation" 
+    aria-expanded="false">
+    <span class="sr-only">Menu Exit</span>
+    </button>
+
+  -->
+
         <nav>
-            <ul class="nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#releases">Releases</a></li>
-                <li><a href="#tour-dates">Tour</a></li>
-                <li><a href="#store">Store</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul data-visible="false" id="primary-navigation" class="nav">
+              <a href="#home"><li>Home</li></a>
+              <a href="#releases"><li>Releases</li></a>
+              <a href="#tour-dates"><li>Tour</li></a>
+              <a href="#store"><li>Store</li></a>
+              <a href="#contact">
+              <li>Contact</li></a>
             </ul>
         </nav>
 
@@ -91,9 +120,94 @@
         <a name="tour-dates"></a><img src="img/Logo linea.png" alt="line">
     </div>
     
-    <section class="dates">
+     <section class="dates">
        <h1>TOUR DATES</h1>
+
        
+  <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+  <a class="bit-widget-initializer"
+    
+	data-artist-name="id_15495120"
+	
+	data-background-color="rgba(24,23,23,1)"
+	data-separator-color="#DDDDDD"
+	data-text-color="rgba(189,189,189,1)"
+	data-font="Helvetica"
+	data-auto-style="true"
+	
+	data-display-local-dates="true"
+	data-local-dates-position="tab"
+	data-display-past-dates="true"
+	data-display-details="false"
+	data-display-lineup="true"
+	data-display-start-time="false"
+	data-social-share-icon="true"
+	data-display-limit=""
+	
+	data-date-format="MMM. D, YYYY"
+	data-date-orientation="horizontal"
+	data-date-border-color="#08C3BA"
+	data-date-border-width="1px"
+	data-date-border-radius="10px"
+	
+	data-event-ticket-cta-size="medium"
+	data-event-ticket-text="TICKETS"
+	data-event-ticket-icon="true"
+	data-event-ticket-cta-text-color="#FFFFFF"
+	data-event-ticket-cta-bg-color="rgba(102,102,102,1)"
+	data-event-ticket-cta-border-color="#08C3BA"
+	data-event-ticket-cta-border-width="0px"
+	data-event-ticket-cta-border-radius="4px"
+	
+	data-sold-out-button-text-color="#FFFFFF"
+	data-sold-out-button-background-color="#9B9B9B"
+	data-sold-out-button-border-color="#08C3BA"
+	data-sold-out-button-clickable="true"
+	
+	data-event-rsvp-position="left"
+	data-event-rsvp-cta-size="medium"
+	data-event-rsvp-text="SET REMINDER"
+	data-event-rsvp-icon="true"
+	data-event-rsvp-cta-text-color="rgba(73,73,73,1)"
+	data-event-rsvp-cta-bg-color="rgba(236,236,236,1)"
+	data-event-rsvp-cta-border-color="rgba(73,73,73,1)"
+	data-event-rsvp-cta-border-width="1px"
+	data-event-rsvp-cta-border-radius="4px"
+	
+	data-follow-section-position="hidden"
+	data-follow-section-alignment="center"
+	data-follow-section-header-text="Get updates on new shows, new music, and more."
+	data-follow-section-cta-size="small"
+	data-follow-section-cta-text="FOLLOW"
+	data-follow-section-cta-icon="true"
+	data-follow-section-cta-text-color="#FFFFFF"
+	data-follow-section-cta-bg-color="rgba(214,214,214,1)"
+	data-follow-section-cta-border-color="#08C3BA"
+	data-follow-section-cta-border-width="0px"
+	data-follow-section-cta-border-radius="4px"
+	
+	data-play-my-city-position="bottom"
+	data-play-my-city-alignment="Center"
+	data-play-my-city-header-text="Don’t see a show near you?"
+	data-play-my-city-cta-size="medium"
+	data-play-my-city-cta-text="REQUEST A SHOW"
+	data-play-my-city-cta-icon="true"
+	data-play-my-city-cta-text-color="rgba(73,73,73,1)"
+	data-play-my-city-cta-bg-color="rgba(236,236,236,1)"
+	data-play-my-city-cta-border-color="#08C3BA"
+	data-play-my-city-cta-border-width="0px"
+	data-play-my-city-cta-border-radius="4px"
+	
+	data-language="en"
+	data-widget-width=""
+	data-div-id="bandintown"
+	data-app-id=""
+	data-affil-code="undefined"
+	data-bit-logo-position="bottomRight"
+	data-bit-logo-color="#CCCCCC"
+	>
+  </a>
+       <!--<div class="bit">
        <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
         <a class="bit-widget-initializer"
     
@@ -111,8 +225,12 @@
 	data-display-past-dates="false"
     ></a>
 
+  </div>
+
     <iframe src="https://www.bandsintown.com/artist/As We Stray/track_button?size=small&display_tracker_count=true&text_color=%23AAAAA&background_color=%23181717&hover_color=%23515151" height="25" width="165" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true" ></iframe>
-    </section>
+
+
+    </section> -->
 
     <div class="divisore">
         <a name="store"></a><img src="img/Logo linea.png" alt="line">
@@ -122,9 +240,7 @@
         <a name="store"></a><h1>STORE</h1>
         <div class="ecwid">
         <div id="my-store-40033562"></div>
-        <div>
         <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?40033562&data_platform=code&data_date=2022-03-02" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-40033562");</script>
-        </div>
     </div>
     </section>
 
