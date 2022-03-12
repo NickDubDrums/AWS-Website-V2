@@ -650,14 +650,14 @@ label {
     top: 9vw;
   }
   .hero .icons-top svg {
-    height: 3vw;
+    height: 30px;
   }
   .icons-bot {
     -webkit-column-gap: 15px;
             column-gap: 15px;
   }
   .icons-bot svg {
-    height: 3vw;
+    height: 30px;
   }
 }
 
