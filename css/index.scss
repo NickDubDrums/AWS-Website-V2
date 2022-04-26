@@ -585,18 +585,28 @@ label {
 
                 a {
                    
-                    font-size: 3vw;
+                    font-size: 5vw;
                     color: #cfcfcf;
                     width: 100%;
                 }
 
                 li {
                     
-                    height: 15vw;
+                    height: 25vw;
                     width: 100%;
                     
                 }
             }
+        }
+        .blur-div {
+            color: #1817175b;
+            height: 20vw;
+            //height: 150px;
+            width: 100%;
+            position: relative;
+            z-index: 0;
+            top: -5vw;
+            //top: -50px;
         }
 
         .bio, .videos, .dates, .store, .contact {

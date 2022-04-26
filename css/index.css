@@ -616,13 +616,21 @@ label {
     padding: 5vh 0 0 0;
   }
   .navbar .nav a {
-    font-size: 3vw;
+    font-size: 5vw;
     color: #cfcfcf;
     width: 100%;
   }
   .navbar .nav li {
-    height: 15vw;
+    height: 25vw;
     width: 100%;
+  }
+  .blur-div {
+    color: #1817175b;
+    height: 20vw;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    top: -5vw;
   }
   .bio h1, .videos h1, .dates h1, .store h1, .contact h1 {
     font-size: 7vw;
