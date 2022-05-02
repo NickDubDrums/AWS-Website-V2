@@ -246,8 +246,12 @@ label {
   font-size: 1.5vw;
   padding-left: 8%;
   padding-right: 8%;
-  padding-top: 4.7vw;
+  padding-top: 5.2vw;
   text-align: center;
+}
+
+.videos p a {
+  color: #767676;
 }
 
 .divisore {
@@ -588,6 +592,12 @@ label {
     height: 2vw;
     z-index: auto;
   }
+  .bio h1, .videos h1, .dates h1, .store h1, .contact h1 {
+    font-size: 7vw;
+  }
+  .bio p, .videos p, .dates p, .store p, .contact p {
+    font-size: 3vw;
+  }
   @supports ((-webkit-backdrop-filter: blur(9px)) or (backdrop-filter: blur(9px))) {
     .navbar .nav {
       background-color: rgba(0, 0, 0, 0.7);
@@ -633,10 +643,10 @@ label {
     top: -5vw;
   }
   .bio h1, .videos h1, .dates h1, .store h1, .contact h1 {
-    font-size: 7vw;
+    font-size: 7.5vw;
   }
   .bio p, .videos p, .dates p, .store p, .contact p {
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
   .hero .logo-scritta {
     top: 2vw;

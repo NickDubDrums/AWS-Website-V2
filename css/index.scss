@@ -230,8 +230,13 @@ label {
         font-size: 1.5vw;
         padding-left: 8%;
         padding-right: 8%;
-        padding-top:  4.7vw;
-        text-align: center;    
+        padding-top:  5.2vw;
+        text-align: center;
+        a {
+            color: rgb(118, 118, 118);
+            
+        }
+           
     }
 
     
@@ -514,7 +519,7 @@ label {
             transform: translateX(0%);
         }
 
- .hero{
+        .hero{
         .logo-scritta {
             top: 2vw;
        
@@ -549,7 +554,16 @@ label {
             }
             
         }
-    }
+        }
+
+        .bio, .videos, .dates, .store, .contact {
+            h1 {
+                font-size: 7vw;
+            }
+            p {
+                font-size: 3vw;
+            }
+        }
 
         @supports (backdrop-filter: blur(9px)){
             .navbar {
@@ -570,9 +584,7 @@ label {
         }
     }
 
-    @media (orientation: portrait) {
-
-        
+    @media (orientation: portrait) {      
 
         .navbar {
             .nav {
@@ -611,10 +623,10 @@ label {
 
         .bio, .videos, .dates, .store, .contact {
             h1 {
-                font-size: 7vw;
+                font-size: 7.5vw;
             }
             p {
-                font-size: 2.5vw;
+                font-size: 4vw;
             }
         }
 
